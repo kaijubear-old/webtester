@@ -1,19 +1,22 @@
 <?php 
 include 'InfoReader.php';
+echo "1";
 
 $name = $_POST["name"]; 
 $time = $_POST["time"];
+echo "2";
 
 $file = 'result.txt';
 $file = fopen("result.txt", "w") or die("Unable to open file!");
+echo "3";
 
 foreach($colors as $value){
-    file_put_contents($file, $value . "<br>", FILE_APPEND | LOCK_EX);
+	echo "4";
 }
-file_put_contents($name, FILE_APPEND | LOCK_EX);
-file_put_contents($time, FILE_APPEND | LOCK_EX);
+
+echo "6";
 
 fclose($file);
 
-
+echo "15";
 ?>
