@@ -1,5 +1,5 @@
 <?php 
-include 'InfoReader.php';
+
 echo "1";
 
 $name = $_POST["name"]; 
